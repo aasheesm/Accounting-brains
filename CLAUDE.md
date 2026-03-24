@@ -11,6 +11,18 @@ Marketing website for outsourced accounting firm serving US, Canada, UAE, and Au
 - **Workers:** Cloudflare Workers (forms, OAuth)
 - **AI:** OpenRouter (blog generation), SERP API, Hunter.io
 
+## ⚠️ Unactivated Paid Integrations (Never Used)
+The following scripts are fully coded but have NO `.env` file configured — they have never run and are not currently active. All are paid services:
+
+| Integration | Script | Purpose | Cost |
+|---|---|---|---|
+| **OpenRouter** | `scripts/generate-blog.js` | AI blog post generation via Claude 3.5 Sonnet | Pay-per-token (~$3–15/M tokens) |
+| **SERP API** (serpapi.com) | `scripts/scrape-leads.js` | Google search scraping to find business leads | Free: 100/mo → $50+/mo |
+| **Hunter.io** | `scripts/scrape-leads.js` | Email discovery from company domains | Free: 25/mo → $49+/mo |
+| **Bland.ai** | `scripts/ai-calling.js` | AI outbound calling to leads (code commented out) | ~$0.09/min per call |
+
+**Status:** Built as a future lead-generation pipeline. Before activating, create a real `.env` from `.env.example` and add API keys. Review costs carefully — running the full pipeline (SERP → Hunter → OpenRouter → Bland) incurs charges on all four services.
+
 ## Running
 ```bash
 npm run dev          # Local dev server

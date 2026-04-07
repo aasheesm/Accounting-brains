@@ -51,3 +51,12 @@ Deployed to GitHub Pages. Push to main = auto-deploy via GitHub Actions.
 - Cloudflare Workers for serverless form handling
 - Hunter.io for email verification
 - Bland.ai for voice demo (if configured)
+
+## Vault Patterns (reference before building new features)
+- **SSG:** `vault/patterns/eleventy-static-site-architecture.md` — 11ty setup
+- **CMS:** `vault/patterns/decap-cms-git-based.md` — Decap CMS + GitHub
+- **Forms:** `vault/patterns/cloudflare-worker-form-handler.md` — Cloudflare Workers
+- **Leads:** `vault/patterns/lead-capture-email-gate.md` — email gating
+- **AI Blog:** `vault/patterns/ai-blog-generation-pipeline.md` — blog generation
+- **SEO:** `vault/patterns/seo-meta-schema-org.md` — SEO + schema.org
+- **GDPR:** `vault/patterns/cookie-consent-gdpr.md` — cookie consent
